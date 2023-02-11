@@ -2,7 +2,7 @@ package Bhargava.Chapter6.GraphTraversal;
 
 public class Main {
     public static void main(String[] args) {
-        Graph graph = new Graph();
+        GraphMatrix graph = new GraphMatrix();
         graph.addVertex('a'); // 0
         graph.addVertex('b'); // 1
         graph.addVertex('c'); // 2
@@ -17,10 +17,10 @@ public class Main {
         graph.addEdge(1, 4);
         graph.addEdge(2, 5);
 
-        System.out.println("Visits: ");
+        System.out.println("Visits(bfs): ");
         graph.bfs();
 
-        System.out.println("\nVisits: ");
+        System.out.println("\nVisits(dfs): ");
         graph.dfs();
     }
 }

@@ -43,7 +43,7 @@ public class Fibonacci {
 
         if (n >= 0 && n <= 1) {
             return n;
-        }
+    }
         long result = fibNaive(n - 1, mem) + fibNaive(n - 2, mem);
         mem[n] = result;
 
